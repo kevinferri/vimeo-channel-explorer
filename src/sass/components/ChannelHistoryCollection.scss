@@ -4,11 +4,12 @@
 @import '../helpers/_mixins';
 
 .ChannelHistoryCollection {
+  @include prefix(flex, 1, webkit ms);
   background: $grey-1;
   border-radius: 3px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-  @include prefix(flex, 1, webkit ms);
   margin-bottom: $medium-gutter;
+  min-height: 100vh;
   padding: $medium-gutter;
 
   &__title {

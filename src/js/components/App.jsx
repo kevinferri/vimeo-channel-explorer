@@ -23,7 +23,7 @@ class App extends Component {
           <VideoFetcher
             placeholder='Search for a Vimeo channel'
           />
-          <FlexboxContainer fullHeight>
+          <FlexboxContainer>
             <VideoCollection />
             <ChannelHistory />
           </FlexboxContainer>

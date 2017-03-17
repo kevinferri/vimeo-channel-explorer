@@ -9,7 +9,7 @@ import '../../../sass/components/layout/FlexboxContainer.scss';
 class FlexboxContainer extends Component {
   render() {
     return (
-      <div className={ this.props.fullHeight ? 'FlexboxContainer FlexboxContainer--full-height' : 'FlexboxContainer' }>
+      <div className='FlexboxContainer'>
         { this.props.children }
       </div>
     );
@@ -18,12 +18,10 @@ class FlexboxContainer extends Component {
 
 FlexboxContainer.propTypes = {
   children: React.PropTypes.arrayOf(React.PropTypes.element),
-  fullHeight: React.PropTypes.bool,
 };
 
 FlexboxContainer.defaultProps = {
   children: [],
-  fullHeight: false,
 };
 
 
