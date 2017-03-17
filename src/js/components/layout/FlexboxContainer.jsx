@@ -4,7 +4,6 @@ import '../../../sass/components/layout/FlexboxContainer.scss';
 /**
  * A flexbox container component
  * @prop {array} children (optional)
- * @prop {bool} fullHeight (optional)
  */
 class FlexboxContainer extends Component {
   render() {
