@@ -25,17 +25,15 @@ class Video extends Component {
       shareIsOpen: false,
     };
     this.handleShareClick = this.handleShareClick.bind(this);
-    this.highlightInputValue = this.highlightInputValue.bind(this);
+    this.highlightInputValue = (event) => {
+      event.target.select();
+    };
   }
 
   handleShareClick() {
     this.setState({
       shareIsOpen: !this.state.shareIsOpen,
     });
-  }
-
-  highlightInputValue(event) {
-    event.target.select(this);
   }
 
   render() {
