@@ -1,6 +1,9 @@
 # Vimeo Channel Explorer
 Discover videos on Vimeo through channels.
 
+## Live Demo
+[http://vimeo-channel-explorer.bitballoon.com/](http://vimeo-channel-explorer.bitballoon.com/)
+
 ## Development Setup
 ```
 git clone https://github.com/kevinferri/vimeo-channel-explorer

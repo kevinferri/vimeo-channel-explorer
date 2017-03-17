@@ -5,7 +5,6 @@
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js -p",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "start": "node ./node_modules/webpack/bin/webpack.js -p && NODE_ENV=production node demo-server.js",
     "lint": "eslint ./src/js/**/*",
     "test": "node --harmony_proxies node_modules/.bin/jest"
   },
