@@ -1,0 +1,53 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_gutters';
+@import '../styleguide/_typography';
+
+.Alert {
+  border: 1px solid $grey-2;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $small-gutter;
+  padding: $medium-gutter;
+  word-break: break-word;
+
+  &__message {
+    @include alert-copy();
+    display: inline-block;
+  }
+
+  &__close-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    outline: none;
+
+    &--success {
+      color: $white;
+    }
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--error {
+    background: $error-red-light;
+    color: $error-red-dark;
+  }
+
+  &--warning {
+    background: $light-orange;
+  }
+
+  &--success {
+    background: $green;
+    color: $white;
+  }
+
+  &--default {
+    background: $grey-1;
+  }
+}

@@ -1,0 +1,10 @@
+@import './helpers/mixins';
+
+* {
+  @include prefix(box-sizing, border-box, webkit ms);
+}
+
+body {
+  @include prefix(text-size-adjust, 100%, webkit ms);
+  margin: 0;
+}

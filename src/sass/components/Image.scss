@@ -1,0 +1,32 @@
+@import '../styleguide/_gutters';
+
+.Image {
+
+  &--responsive {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  &--shadow {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--bottom-gutter {
+    margin: 0 0 $medium-gutter 0;
+  }
+
+  &--inline {
+    float: left;
+    margin-right: $medium-gutter;
+  }
+
+  &--medium-square {
+    height: 75px;
+    width: 75px;
+  }
+}

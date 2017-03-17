@@ -1,0 +1,93 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_gutters';
+@import '../styleguide/_typography';
+
+.Video {
+  background: $grey-1;
+  border-radius: 3px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  margin: $medium-gutter 0;
+  word-break: break-word;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &__video-credit {
+    padding-bottom: $medium-gutter;
+  }
+
+  &__video-content {
+    @include generic-copy();
+    padding: $medium-gutter;
+  }
+
+  &__video-caption {
+    @include generic-copy();
+  }
+
+  &__video-credit-link {
+    color: $vimeo-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__video-name {
+    @include medium-title();
+    color: $vimeo-secondary-blue;
+    display: block;
+    margin-bottom: $small-gutter;
+    text-decoration: none;
+
+    &:hover {
+      color: $vimeo-blue;
+      text-decoration: underline;
+    }
+  }
+
+  &__video-share-information {
+    border: 1px solid $grey-2;
+    border-radius: 3px;
+    display: none;
+    margin-bottom: $medium-gutter;
+    padding: $medium-gutter;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__video-share-label {
+    @include generic-copy();
+    margin-top: $small-gutter;
+  }
+
+  &__video-share-selection {
+    margin-bottom: $medium-gutter;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__video-share-button {
+    @include generic-copy();
+    background: $grey-2;
+    border: 1px solid $grey-3;
+    border-radius: 3px;
+    color: $vimeo-secondary-blue;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: $small-gutter;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

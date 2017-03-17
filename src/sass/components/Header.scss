@@ -1,0 +1,23 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_typography';
+@import '../styleguide/_gutters';
+
+.Header {
+  border-bottom: 1px solid $grey-1;
+  padding: $medium-gutter 0;
+
+  &__title {
+    @include large-title();
+    color: $vimeo-blue;
+    margin: 0 0 $small-gutter 0;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include generic-copy();
+    font-style: italic;
+  }
+}

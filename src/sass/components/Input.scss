@@ -1,0 +1,23 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_typography';
+
+.Input {
+  @include generic-copy();
+  border: 1px solid $grey-2;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 6px 12px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $vimeo-blue;
+    -webkit-transition: border 500ms ease-out;
+    transition: border 500ms ease-out;
+  }
+
+  &--full-width {
+    display: block;
+    width: 100%;
+  }
+}

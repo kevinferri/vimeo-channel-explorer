@@ -1,0 +1,22 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_gutters';
+@import '../styleguide/_animations';
+
+.Loader {
+
+  &__spinner {
+    animation: spin 0.6s linear infinite;
+    border: 8px solid $grey-1;
+    border-radius: 50%;
+    border-top: 8px solid $vimeo-blue;
+    display: block;
+    margin: $medium-gutter auto $small-gutter auto;
+    height: 70px;
+    width: 70px;
+  }
+
+  &__loading-text {
+    color: $vimeo-blue;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_typography';
+@import '../styleguide/_gutters';
+
+.ChannelHistoryCollection {
+  background: $grey-1;
+  border-radius: 3px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  margin-bottom: $medium-gutter;
+  padding: $medium-gutter;
+
+  &__title {
+    @include alert-copy();
+    margin-bottom: $small-gutter;
+    text-align: center;
+  }
+
+  &__warning {
+    @include generic-copy();
+    color: $vimeo-secondary-blue;
+    display: block;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__list-item-button {
+    @include generic-copy();
+    background: $vimeo-secondary-blue;
+    border: 1px solid $grey-3;
+    border-radius: 3px;
+    color: $grey-2;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 0.5px;
+    outline: none;
+    margin-bottom: $small-gutter;
+    padding: $small-gutter;
+    text-transform: lowercase;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

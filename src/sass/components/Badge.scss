@@ -1,0 +1,38 @@
+@import '../styleguide/_gutters';
+@import '../styleguide/_typography';
+@import '../styleguide/_colors';
+
+.Badge {
+  font-size: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 $small-gutter;
+  padding: $small-gutter / 2;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--default {
+    background: $grey-1;
+    color: $vimeo-secondary-blue;
+  }
+
+  &--plus {
+    background: $green;
+    color: $white;
+  }
+
+  &--pro {
+    background: $vimeo-blue;
+    color: $white;
+  }
+
+  &--business {
+    background: $green-secondary;
+    color: $white;
+  }
+}

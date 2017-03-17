@@ -1,0 +1,7 @@
+@import '../styleguide/_typography';
+@import '../styleguide/_colors';
+
+.App {
+  border-top: 3px solid $vimeo-secondary-blue;
+  font-family: $helvetica-neue;
+}

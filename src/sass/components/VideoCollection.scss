@@ -1,0 +1,27 @@
+@import '../styleguide/_colors';
+@import '../styleguide/_gutters';
+@import '../styleguide/_typography';
+@import '../styleguide/_breakpoints';
+
+.VideoCollection {
+  flex: 4;
+  margin-right: $medium-gutter;
+
+  @include respond-to(small) {
+    margin-right: 0;
+  }
+
+  &__video-list {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  &__result-notifier {
+    @include generic-copy();
+    background: $green;
+    border-radius: 3px;
+    color: $white;
+    padding: $small-gutter;
+  }
+}
