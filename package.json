@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Discover videos on Vimeo through channels",
   "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js",
     "prod": "node ./node_modules/webpack/bin/webpack.js -p",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "lint": "eslint ./src/js/**/*",
