@@ -39,7 +39,7 @@ class VideoFetcher extends Component {
   handleKeyPress(event) {
     if (event.key === 'Enter') {
       if (this.state.channel.trim().length > 0 && this.state.channelHasChangedSinceLastReload) {
-        ReloadVideos(this.state.channel.replace(/ /g, ''));
+        ReloadVideos(this.state.channel.replace(/ /g, '').toLowerCase());
         this.setState({ channelHasChangedSinceLastReload: false });
       }
     }
