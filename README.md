@@ -30,12 +30,7 @@ npm run lint
 If you are using atom, you can use the [eslint plugin](https://atom.io/packages/eslint) for live linting.
 
 ## Other Scripts
-Build for production:
-```
-npm run prod
-```
-
-Generic build from webpack:
+Build production bundle:
 ```
 npm run build
 ```
