@@ -1,6 +1,9 @@
 @import '../../styleguide/_breakpoints';
+@import '../../helpers/_mixins';
 
 .FlexboxContainer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 
   &--full-height {

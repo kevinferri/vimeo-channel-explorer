@@ -12,7 +12,7 @@ Development server will be started at `http://localhost:8080/`
 
 ## Tests
 This project uses [Jest](https://facebook.github.io/jest/) for testing.
-Tests are located in `/tests`
+Tests are located in `/tests`.
 To run tests:
 ```
 npm test

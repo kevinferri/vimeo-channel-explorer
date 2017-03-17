@@ -2,9 +2,10 @@
 @import '../styleguide/_gutters';
 @import '../styleguide/_typography';
 @import '../styleguide/_breakpoints';
+@import '../helpers/_mixins';
 
 .VideoCollection {
-  flex: 4;
+  @include prefix(flex, 4, webkit ms);
   margin-right: $medium-gutter;
 
   @include respond-to(small) {

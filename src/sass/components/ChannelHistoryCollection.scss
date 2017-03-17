@@ -1,12 +1,13 @@
 @import '../styleguide/_colors';
 @import '../styleguide/_typography';
 @import '../styleguide/_gutters';
+@import '../helpers/_mixins';
 
 .ChannelHistoryCollection {
   background: $grey-1;
   border-radius: 3px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-  flex: 1;
+  @include prefix(flex, 1, webkit ms);
   margin-bottom: $medium-gutter;
   padding: $medium-gutter;
 
