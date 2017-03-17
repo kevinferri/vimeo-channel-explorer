@@ -32,24 +32,4 @@
   &__list-item {
     list-style: none;
   }
-
-  &__list-item-button {
-    @include generic-copy();
-    background: $vimeo-secondary-blue;
-    border: 1px solid $grey-3;
-    border-radius: 3px;
-    color: $grey-2;
-    cursor: pointer;
-    display: block;
-    letter-spacing: 0.5px;
-    outline: none;
-    margin-bottom: $small-gutter;
-    padding: $small-gutter;
-    text-transform: lowercase;
-    width: 100%;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }

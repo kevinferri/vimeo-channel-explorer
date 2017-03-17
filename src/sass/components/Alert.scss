@@ -5,9 +5,10 @@
 .Alert {
   border: 1px solid $grey-2;
   border-radius: 3px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-  margin-bottom: $small-gutter;
+  margin-bottom: $medium-gutter;
   padding: $medium-gutter;
   word-break: break-word;
 

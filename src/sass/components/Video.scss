@@ -72,22 +72,4 @@
       margin-bottom: 0;
     }
   }
-
-  &__video-share-button {
-    @include generic-copy();
-    background: $grey-2;
-    border: 1px solid $grey-3;
-    border-radius: 3px;
-    color: $vimeo-secondary-blue;
-    cursor: pointer;
-    display: block;
-    outline: none;
-    padding: $small-gutter;
-    text-transform: uppercase;
-    width: 100%;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }
