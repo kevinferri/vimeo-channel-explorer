@@ -1,3 +1,4 @@
+import 'whatwg-fetch';
 import Dispatcher from '../dispatcher';
 import config from '../../../config';
 
